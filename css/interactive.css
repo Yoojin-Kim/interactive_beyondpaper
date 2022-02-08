@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: #0a5c40;
+  overscroll-behavior: contain;
+}
+
+main {
+  position: relative;
+  overflow-y: scroll;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}
+
+section.mainPage {
+  height: 4000px;
+  padding-bottom: 50px;
+}
+
+section.mainPage h1.title {
+  position: fixed;
+  text-align: center;
+  color: #fff;
+  font-size: 2.7rem;
+  padding-top: 20vh;
+  width: 400px;
+  left: calc(50% - 200px);
+}
+
+section.mainPage .imageWrap {
+  height: 100vh;
+}
+
+section.mainPage .imageWrap .parallax_image {
+  position: fixed;
+  width: 100%;
+  height: inherit;
+  background-position: top center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  perspective: 300px;
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(1) {
+  background-image: url(../image/layer1.png);
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(2) {
+  background-image: url(../image/layer2.png);
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(3) {
+  background-image: url(../image/layer3.png);
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(4) {
+  background-image: url(../image/layer4.png);
+
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(5) {
+  background-image: url(../image/layer5.png);
+
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(6) {
+  background-image: url(../image/layer6.png);
+ 
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(7) {
+  background-image: url(../image/layer7.png);
+ 
+}
+section.mainPage .imageWrap .parallax_image:nth-child(8) {
+  background-image: url(../image/layer8.png);
+
+}
+
+
+section.mainPage .imageWrap .pink-background {
+  position: fixed;
+  perspective: 300px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+section.mainPage .imageWrap .pink-background .left {
+  background-color: #ffbedd;
+  flex: 1;
+  height: 100%;
+}
+section.mainPage .imageWrap .pink-background .center {
+  height: 100%;
+  width: auto;
+}
+section.mainPage .imageWrap .pink-background .right {
+  background-color: #ffbedd;
+  flex: 1;
+  height: 100%;
+}
