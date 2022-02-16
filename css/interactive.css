@@ -16,6 +16,7 @@ main {
 section {
   position: relative;
   width: 100%;
+  
 }
 
 section.mainPage {
@@ -44,7 +45,7 @@ section.mainPage .imageWrap .parallax_image {
   background-position: top center;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  perspective: 300px;
+  perspective: 500px;
 }
 
 section.mainPage .imageWrap .parallax_image:nth-child(1) {
@@ -98,7 +99,7 @@ section.mainPage .imageWrap .pink-background .left {
 }
 section.mainPage .imageWrap .pink-background .center {
   height: 100%;
-  width:50%;
+  width: 50%;
   background-image: url(../image/layer8.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -108,4 +109,35 @@ section.mainPage .imageWrap .pink-background .right {
   background-color: #ffbedd;
   flex: 1;
   height: 100%;
+}
+
+@keyframes fadeInOut {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+.info-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  background-color: black;
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-text {
+  font-size: 16px;
+  color: white;
+  animation: fadeInOut 3s ease-in-out infinite;
 }
