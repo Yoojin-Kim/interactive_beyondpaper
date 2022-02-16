@@ -78,11 +78,10 @@ section.mainPage .imageWrap .parallax_image:nth-child(7) {
   background-image: url(../image/layer7.png);
  
 }
-section.mainPage .imageWrap .parallax_image:nth-child(8) {
+/* section.mainPage .imageWrap .parallax_image:nth-child(8) {
   background-image: url(../image/layer8.png);
 
-}
-
+} */
 
 section.mainPage .imageWrap .pink-background {
   position: fixed;
@@ -99,7 +98,11 @@ section.mainPage .imageWrap .pink-background .left {
 }
 section.mainPage .imageWrap .pink-background .center {
   height: 100%;
-  width: auto;
+  width:50%;
+  background-image: url(../image/layer8.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section.mainPage .imageWrap .pink-background .right {
   background-color: #ffbedd;
